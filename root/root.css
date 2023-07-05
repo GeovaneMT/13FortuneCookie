@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  --background: linear-gradient(45deg, #190361 0%, #B0F 100%);
+  --cream-background: hsla(198, 32%, 92%, 1);
+  --yellow-background: hsla(35, 100%, 50%, 1);
+
+  --shadow: 2px 2px 2px 0px rgba(85, 85, 85, 0.50);
+    
+  --textcolor: hsla(244, 38%, 28%, 1);
+
+  --headersize: clamp(2rem, 3.2rem, 4rem);
+  --buttonsize: clamp(1rem, 1.6rem, 2rem);
+  --textsize: clamp(1.6rem, 2rem, 2.4rem);
+
+  --fontfortune: 'Dancing Script', sans-serif;
+  --fontstyle: 'DM Sans', sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 1.2rem;
+  height: 1.2rem;
+  background: var(--background);
+  border: 5px solid #190361;
+}
+
+::-webkit-scrollbar:hover {
+  background: var(--yellow-background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--background);
+  border-radius: 10rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--yellow-background);
+}
+  
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100vh;
+  
+  background: var(--background);
+  background-repeat: no-repeat;
+
+  font-size: var(--textsize);
+  font-family: var(--fontstyle);
+  color: var(--textcolor);
+}
+
+body, main, #intro, #message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+img {
+  max-width: 75vw;
+}
+
+h2 {
+  font-size: var(--headersize);
+}
+
+p {
+  font-family: var(--fontfortune);
+}
